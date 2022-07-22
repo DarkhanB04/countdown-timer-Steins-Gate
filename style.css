@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+body{
+    font-family: 'Bebas Neue';
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin:0;
+    overflow: hidden;
+    color: #fff;
+}
+.logo{
+    margin-top: -50px;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  h1{
+    font-weight: normal;
+    font-size: 30px;
+    margin: -60px 0 40px;
+  }
+  .countdown {
+    margin-top: 50px;
+    display:flex;
+    transform: scale(2);
+  }
+  time h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    margin: 0 0 5px;
+  }
+  .songbtn{
+    font-family: "Bebas Neue";
+    font-size: 17px;
+    margin-top: 80px;
+    border-radius: 10px;
+    padding: 10px 20px;;
+    border:0;
+    background-color: #000;
+    color: #fff;
+    cursor:pointer;
+    box-shadow: 0 5px #4A3728;
+  }
+  .songbtn:hover{
+    opacity: .70
+  }
+  .songbtn:active{
+    box-shadow: 0 2px #4A3728;
+    transform: translateY(2px);
+  }
+  
+  .flip-card {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+    border-radius: .1em;
+  }
+  
+  .top,
+  .bottom,
+  .flip-card .top-flip,
+  .flip-card .bottom-flip {
+    height: .75em;
+    line-height: 1;
+    padding: .25em;
+    overflow: hidden;
+  }
+  
+  .top,
+  .flip-card .top-flip {
+    background-color: #f7f7f7;
+    border-top-right-radius: .1em;
+    border-top-left-radius: .1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+  }
+  
+  .bottom,
+  .flip-card .bottom-flip {
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    border-bottom-right-radius: .1em;
+    border-bottom-left-radius: .1em;
+    color: #000;
+  }
+  
+  .flip-card .top-flip {
+    position: absolute;
+    width: 100%;
+    animation: flip-top 250ms ease-in;
+    transform-origin: bottom;
+  }
+  
+  @keyframes flip-top {
+    100% {
+      transform: rotateX(90deg);
+    }
+  }
+  
+  .flip-card .bottom-flip {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: flip-bottom 250ms ease-out 250ms;
+    transform-origin: top;
+    transform: rotateX(90deg);
+  }
+  
+  @keyframes flip-bottom {
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+  
+  .container {
+    display: flex;
+    gap: .5em;
+    margin-bottom: 20px;
+    font-size: 29px;
+    justify-content: center;
+  }
+  
+  .container-segment {
+    display: flex;
+    flex-direction: column;
+    gap: .1em;
+    align-items: center;
+  }
+  
+  .segment {
+    display: flex;
+    gap: .1em;
+  }
+  
+  .segment-title {
+    font-size: 1rem;
+  }
+  @media(max-width:500px){
+    .logo{
+        margin-top: 45px;
+        max-width: 350px;
+        max-height: 250px;;
+    }
+    h1{
+        margin-top: 1px;
+        font-size:20px;
+    }
+    .time{
+        margin:5px;
+    }
+    .time h2{
+      font-size:12px;
+    }
+    .time small{
+        font-size: 10px;
+    }
+    .container-segment {
+      font-size: 13px;
+    }
+    .container{
+      margin-top: 20px;
+      margin-bottom: 30px;
+      display: block;
+      gap: 0em;
+      font-size: 13px;
+    }
+    .segment-title{
+      font-size: 15px;
+    }
+    
+  }

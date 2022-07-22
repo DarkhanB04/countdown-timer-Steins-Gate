@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steins:Gate countdown time</title>
+    <link rel="stylesheet" type="text/css"href="style.css">
+</head>
+<body>
+    
+    <video id="background-video" autoplay muted loop>
+    <source src="bg1.MP4" type="video/mp4">
+    </video>
+
+    <img src="logo.png" alt="" class="logo">
+    <h1>Countdown from the release of the legendary anime "STEINS GATE"</h1>
+   <div id="countdown" class="countdown">
+    <div class="container">
+        <div class="container-segment">
+            <div class="segment-title">Days</div>
+            <div class="segment">
+              <div class="flip-card" data-days-tens>
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+              </div>
+              <div class="flip-card" data-days-ones>
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+              </div>
+              <div class="flip-card" data-days-dones>
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+              </div>
+              <div class="flip-card" data-days-gones>
+                <div class="top">0</div>
+                <div class="bottom">0</div>
+              </div>
+            </div>
+          </div>
+        <div class="container-segment">
+          <div class="segment-title">Hours</div>
+          <div class="segment">
+            <div class="flip-card" data-hours-tens>
+              <div class="top">0</div>
+              <div class="bottom">0</div>
+            </div>
+            <div class="flip-card" data-hours-ones>
+              <div class="top">0</div>
+              <div class="bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-segment">
+          <div class="segment-title">Minutes</div>
+          <div class="segment">
+            <div class="flip-card" data-minutes-tens>
+              <div class="top">0</div>
+              <div class="bottom">0</div>
+            </div>
+            <div class="flip-card" data-minutes-ones>
+              <div class="top">0</div>
+              <div class="bottom">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="container-segment">
+          <div class="segment-title">Seconds</div>
+          <div class="segment">
+            <div class="flip-card" data-seconds-tens>
+              <div class="top">0</div>
+              <div class="bottom">0</div>
+            </div>
+            <div class="flip-card" data-seconds-ones>
+              <div class="top">0</div>
+              <div class="bottom">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<button onclick="playSong()"class="songbtn">El Psy Congro</button>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
